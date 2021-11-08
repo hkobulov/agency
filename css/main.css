@@ -333,6 +333,7 @@ img {
 
 .service {
     padding-bottom: 55px;
+    background-color: #F9F9FB;
 }
 
 .service::before {
@@ -469,6 +470,7 @@ img {
 .work {
     padding-top: 55px;
     padding-bottom: 150px;
+    background-color: #F9F9FB;
 }
 
 .work-heading {
@@ -500,6 +502,10 @@ img {
     margin: 20px;
 }
 
+.work-list-img {
+    border-radius: 20px;
+}
+
 .work-list-img:hover {
     transform: scale(1.1);
     transition: transform .3s ease;
@@ -513,12 +519,15 @@ img {
 
 /* ********************************** Motto Section */
 
+.motto {
+    background-color: #F1F1F3;
+}
+
 .motto .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 50px 60px;
-    background-color: #F1F1F3;
 }
 
 .motto-heading {
@@ -547,24 +556,180 @@ img {
     line-height: 28px;
 }
 
+
+/* ******************************************* About section */
+
+.about {
+    padding-top: 170px;
+    padding-bottom: 150px;
+    background-color: #F9F9FB;
+}
+
+.about-inner {
+    padding-top: 85px;
+    padding-right: 130px;
+    padding-bottom: 85px;
+    padding-left: 680px;
+    background-image: url('../img/about.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    object-fit: contain;
+}
+
+.about-heading {
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.about-desc {
+    margin-bottom: 35px;
+    font-size: 18px;
+    color: #808080;
+}
+
+
+/* * * * * * * * * * * * * * * * * * * *  Footer */
+
+.footer {
+    padding-top: 85px;
+    padding-bottom: 88px;
+    background-color: #0A142F;
+}
+
+.footer-inner {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.footer-link {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 75px;
+}
+
+.footer-link:hover {
+    opacity: 0.8;
+    transition: opacity 0.5s ease;
+}
+
+.f-nav-list {
+    margin: 0;
+    margin-bottom: 75px;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.f-nav-list-link {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.f-nav-list-link:hover {
+    color: #FFE600;
+    transition: color .5s ease;
+}
+
+.f-social-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: -10px;
+    margin-bottom: 70px;
+    padding: 0;
+    list-style-type: none;
+}
+
+.f-social-list-item {
+    margin: 10px;
+}
+
+.f-social-list-link {
+    display: block;
+    padding: 17px 16px 16px 17px;
+    color: #fff;
+    background-color: #212A43;
+    border-radius: 20px;
+    object-fit: contain;
+}
+
+.f-social-list-link:hover {
+    color: #FFE600;
+    box-shadow: inset 0 0 0 2px #FFE600;
+    background-color: #000;
+    transition: color .3s ease;
+    transition: background-color .5s ease-in;
+    transition: box-shadow .7s ease;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-desc {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    color: #474E63;
+    font-weight: 500;
+}
+
+.footer-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.footer-list-item + .footer-list-item {
+    margin-left: 15px;
+}
+
+.footer-list-link {
+    color: #474E63;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.footer-list-link:hover {
+    color: #FFE600;
+    transition: color .5s ease;
+}
+
+
 /* Verstka */
+
+@media only screen and (max-width:1120px){
+    .about-inner {
+        padding-right: 20px;
+        padding-left: 600px;
+    }
+}
 
 @media only screen and (max-width: 1000px) {
     .menu-list-topper {
         flex-direction: column-reverse;
         align-items: start;
     }
-
+    
     .menu-exit {
         margin-left: auto;
     }
-
+    
     /* Motto */
-
+    
     .motto .container {
         flex-direction: column;
     }
-
+    
     .motto-heading {
         width: 80%;
         margin-bottom: 15px;
@@ -572,15 +737,31 @@ img {
         line-height: 1.2;
         text-align: center;
     }
-
+    
     .motto-desc {
         width: 100%;
         font-size: 20px;
         line-height: 1.2;
     }
-
+    
     .motto-heading::after {
         display: none;
+    }
+    
+    /* About */
+    
+    .about-inner {
+        padding: 250px 30px;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .about-heading {
+        color: #fff;
+    }
+    
+    .about-desc {
+        color: #F0EEFF;
     }
 }
 
@@ -588,7 +769,7 @@ img {
     .header-btn {
         margin-left: 10px;
     }
-
+    
     .menu-list {
         width: 450px;
     }
@@ -596,7 +777,7 @@ img {
     .menu-list-top {
         margin-bottom: 20px;
     }
-
+    
     .menu-list-link {
         font-size: 14px;
     }
@@ -622,11 +803,11 @@ img {
     .header-right-link {
         display: none;
     }
-
+    
     
     
     /* hero */
-
+    
     .hero {
         background-image: url('../img/three-thin-icon.svg');
         background-size: 600px 400px;
@@ -653,18 +834,22 @@ img {
     .hero-list-link-other {
         margin: 0;
     }
-
+    
     /* Service */
-
+    
     .service-heading {
         font-size: 28px;
     }
     
     /* Work */
-
+    
     .work-list-img {
         width: 300px;
         height: 313px;
+    }
+    
+    .motto .container {
+        padding: 15px 20px;
     }
 }
 
@@ -673,27 +858,77 @@ img {
         width: 100%;
         padding: 25px;
     }
-
+    
     .menu-list-link {
         font-size: 12px;
     }
-
+    
     .menu-list-link::before {
         display: none;
     }
-
+    
     .add-link {
         font-size: 12px;
     }
-
+    
     .social-list-link {
         padding: 8px;
     }
-
+    
     /* Service */
-
+    
     .service-list-item {
         width: 310px;
+    }
+    
+    /* About */
+    
+    .about {
+        padding: 70px 20px;
+    }
+    
+    .about-inner {
+        padding: 50px 5px;
+        background-size: cover;
+    }
+    
+    .about-heading {
+        font-size: 28px;
+    }
+    
+    .about-desc {
+        font-size: 16px;
+    }
+
+    /* Footer */
+
+    .f-nav-list {
+        margin: -10px;
+        margin-bottom: 25px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .f-nav-list-item {
+        margin: 10px;
+    }
+
+    .f-social-list {
+        justify-content: center;
+    }
+
+    .footer-bottom {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .footer-desc {
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+
+    .footer-list {
+        margin: 0 auto;
     }
 }
 
@@ -702,5 +937,15 @@ img {
         background-image: url('../img/three-thin-icon.svg');
         background-size: 400px 300px;
         background-position: left calc(50% + 50px) top 30%;
+    }
+    
+    /* About */
+    
+    .about-heading {
+        font-size: 20px;
+    }
+    
+    .about-desc {
+        font-size: 16px;
     }
 }
