@@ -1282,13 +1282,145 @@ img {
     text-align: center;
 }
 
-.testimonial-list-area::before {
-    content: '';
-    display: block;
-    width: 60px;
-    height: 60px;
+.testimonial-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+    column-gap: 20px;
+    row-gap: 20px;
+    list-style-type: none;
 }
 
+.testimonial-list-item {
+    width: 385px;
+    height: 100%;
+    padding: 12px;
+    border: 2px solid #E6E6E6;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+.testimonial-list-area {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.testimonial-list-img {
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.testimonial-list-heading {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.testimonial-list-desc {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    color: #808080;
+}
+
+.testimonial-list-about {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    color: #808080;
+}
+
+
+/* $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $  Terms & Conditions page */
+
+/* * * * * * * * * * * * * * * *  * Terms section */
+
+.terms {
+    padding-top: 40px;
+    padding-bottom: 120px;
+}
+
+.terms-heading {
+    margin-bottom: 10px;
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.terms-desc {
+    margin-bottom: 60px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #808080;
+    text-align: center;
+}
+
+.terms-area + .terms-area {
+    margin-top: 40px;
+}
+
+.terms-area {
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+.condition-heading {
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.condition-desc {
+    font-size: 18px;
+    color: #808080;
+}
+
+.condition-desc + .condition-desc {
+    margin-top: 20px;
+}
+
+/* $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $  Not found page */
+
+/* * * * * * * * * * * * * * * *  * Not found section */
+
+.not-found {
+    padding-top: 40px;
+    padding-bottom: 100px;
+}
+
+.not-found-inner{
+    padding-top: 400px;
+    background-image: url('../img/not-found.png');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: 722px 392px;
+}
+
+
+.not-found-heading {
+    margin-bottom: 30px;
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.not-found-desc {
+    margin-bottom: 55px;
+    font-size: 24px;
+    color: #808080;
+    text-align: center;
+}
+
+.not-found-link {
+    width: 206px;
+    display: block;
+    margin: 0 auto;
+}
 
 /* Verstka */
 
@@ -1463,6 +1595,28 @@ img {
     .contact-form-left {
         width: 100%;
     }
+
+    /* Terms & Condition */
+
+    .terms-heading {
+        font-size: 30px;
+    }
+
+    .condition-heading {
+        font-size: 22px;
+    }
+
+    /* Not found */
+
+    .not-found-heading {
+        font-size: 30px;
+    }
+
+    .not-found-inner {
+        flex-shrink: 0;
+        padding-top: 400px;
+        background-size: contain;
+    }
 }
 
 @media only screen and (max-width: 600px){
@@ -1565,6 +1719,13 @@ img {
     .leadirship-heading {
         font-size: 28px;
     }
+
+    /* Not found */
+
+    .not-found-inner {
+        padding-top: 300px;
+        background-size: contain;
+    }
     
 }
 
@@ -1614,6 +1775,13 @@ img {
 
     .contact-form-btn {
         margin: 0 auto;
+    }
+
+    /* Not found */
+
+    .not-found-inner {
+        padding-top: 200px;
+        background-size: contain;
     }
 }
 
